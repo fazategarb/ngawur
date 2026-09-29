@@ -1,4 +1,4 @@
-# 🧠 NGAWUR
+# NGAWUR
 ### Neural Gesture Analysis with Webcam-based User-input Recognition
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
@@ -10,7 +10,7 @@
 
 ---
 
-## 📂 Struktur Proyek (Anti-Spaghetti Architecture)
+## Struktur Proyek
 
 Struktur direktori disusun secara modular dan terpisah berdasarkan tanggung jawab masing-masing komponen:
 
@@ -18,38 +18,38 @@ Struktur direktori disusun secara modular dan terpisah berdasarkan tanggung jawa
 ngawur/
 ├── .env                          # Konfigurasi Roboflow API
 ├── .gitignore                    # Pengabaian file build, venv, & weights besar
-├── index.py                      # 🚀 CLI Launcher utama untuk menjalankan seluruh sistem
+├── index.py                      # CLI Launcher utama untuk menjalankan seluruh sistem
 ├── README.md                     # Dokumentasi panduan lengkap proyek
 ├── requirements.txt              # Daftar dependensi untuk demo lokal
 │
 ├── dataset/                      # Dataset gestur tangan
 │   └── hand-gesture.v2i.yolov8/  # Dataset format YOLOv8 (train, valid, test)
 │
-├── placeholder/                  # 📚 Template praktikum dosen (ANN & CNN)
+├── placeholder/                  # Template praktikum dosen (ANN & CNN)
 │   ├── Praktikum_1_ANN_.ipynb
 │   └── Praktikum_2_CNN.ipynb
 │
-├── notebooks/                    # 📓 NOTEBOOK PELATIHAN GOOGLE COLAB
+├── notebooks/                    # NOTEBOOK PELATIHAN GOOGLE COLAB
 │   └── NGAWUR_Training.ipynb     # Notebook lengkap (18 sel terstruktur & analisis kritis)
 │
-├── models/                       # 🤖 Bobot Model Deep Learning
+├── models/                       # Bobot Model Deep Learning
 │   ├── .gitkeep
 │   └── best.pt                   # (Tempat meletakkan best.pt setelah selesai training)
 │
-├── demo/                         # 🎮 Aplikasi Demo
+├── demo/                         # Aplikasi Demo
 │   ├── webcam_demo.py            # Demo 1: OpenCV Real-time Webcam
 │   └── app.py                    # Demo 2: Streamlit Web Dashboard (Upload & Export)
 │
-├── utils/                        # 🔧 Modul Utilitas Bersama
+├── utils/                        # Modul Utilitas
 │   ├── __init__.py
 │   └── inference.py              # Engine inferensi YOLOv8, palet warna, & visualizer
 │
-└── output/                       # 📁 Direktori penyimpanan snapshot & hasil export
+└── output/                       # Direktori penyimpanan snapshot & hasil export
 ```
 
 ---
 
-## 🏷️ 8 Target Kelas Gestur Tangan
+## 8 Target Kelas Gestur Tangan
 
 | No | Label Kelas | Deskripsi Singkat | Warna Bounding Box |
 |---|---|---|---|
@@ -64,7 +64,7 @@ ngawur/
 
 ---
 
-## ⚡ Panduan Menjalankan Proyek
+## Panduan Menjalankan Proyek
 
 ### 1. Pelatihan Model di Google Colab (GPU Gratis)
 
@@ -134,7 +134,7 @@ streamlit run demo/app.py
 
 ---
 
-## 📊 Metrik & Kriteria Evaluasi
+## Metrik & Kriteria Evaluasi
 
 - **Arsitektur**: YOLOv8n (*Anchor-Free Decoupled Head + CSPDarknet Backbone*)
 - **Target mAP@0.5**: $\ge 90.0\%$
@@ -143,6 +143,7 @@ streamlit run demo/app.py
 
 ---
 
-## 👨‍💻 Kontributor & Lisensi
-- Dikembangkan untuk proyek Deep Learning / Computer Vision Praktikum.
+## Kontributor & Lisensi
+- Dikembangkan untuk proyek Deep Learning.
 - Dataset dilisensikan di bawah [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- Repository GitHub Created by: @fazategarb
