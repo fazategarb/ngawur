@@ -1,0 +1,7 @@
+# Folder ini untuk menyimpan model hasil training (best.pt)
+# Download best.pt dari Google Colab setelah training selesai
+# dan letakkan di folder ini.
+#
+# Struktur yang diharapkan:
+# models/
+#   └── best.pt       <- hasil training YOLOv8n dari Colab

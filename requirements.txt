@@ -1,0 +1,22 @@
+# ============================================================
+# NGAWUR - Neural Gesture Analysis with Webcam-based User-input Recognition
+# Requirements untuk demo lokal (webcam & upload gambar)
+# ============================================================
+#
+# Install dengan perintah:
+# pip install -r requirements.txt
+#
+# Catatan: Training dilakukan di Google Colab, bukan di sini.
+# File ini hanya untuk keperluan demo lokal setelah model selesai ditraining.
+
+# Core deep learning & computer vision
+ultralytics>=8.0.0          # YOLOv8 framework untuk inference
+opencv-python>=4.8.0        # Webcam real-time & image processing
+
+# Web demo interface
+streamlit>=1.28.0           # Upload gambar UI
+
+# Utilities
+python-dotenv>=1.0.0        # Load API key dari .env
+Pillow>=10.0.0              # Image manipulation
+numpy>=1.24.0               # Array operations
